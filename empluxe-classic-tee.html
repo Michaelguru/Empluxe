@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop Empluxe Lantern Tee</title>
+    <title>empluxe-classic-tee</title>
     <link rel="stylesheet" href="Checkout.css">
 </head>
-
 <body>
-    
+
     <header class="header">
         <div class="left-nav">
             <ul>
@@ -33,17 +32,17 @@
         
         <div class="right-nav">
             <a href="#" class="login"> LogIn</a>
-            <a href="" class="cart"> Cart</a>
+            <a href="#" class="cart"> Cart</a>
         </div>
     </header>
 
 
     <div class="lantern-tee">
         
-        <img src="images/image1.jpeg" alt="lantern tee shirt">
+        <img src="images/image12b.JPG" alt="CLASSIC TEE">
         <div class="lantern-tee-info">
-            <h1>EMPLUXE LANTERN TEE</h1>
-            <h2>$59.00</h2>
+            <h1>EMPLUXE CLASSIC TEE</h1>
+            <h2>$64.00</h2>
             <p>Delivery in 24 hours if order is placed within Lagos State.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo inventore amet incidunt, eius unde, suscipit reiciendis tenetur facere, nostrum vitae beatae commodi quidem minima. Iure quidem eaque quisquam tempore accusamus.</p>
             <p>Only three Items are available</p>
@@ -55,8 +54,8 @@
                 <label onclick="decreasebtn()">-</label>
             </div>
             <div class="buy-cart">
-                <label>ADD TO CART</label>
-                <label id="black"> SHOP NOW</label>
+                <label><a href=""> ADD TO CART </a></label>
+                <label id="black"> <a href=""> SHOP NOW </a></label>
             </div>
         </div>
 
@@ -84,7 +83,27 @@
       </footer>
       <p class="copyright">Empluxe Brand copyright 2024, all rights reserved</p>
 
-
-    <script src="lanternTee.js"></script>
+    
 </body>
+<script>
+    let count = 1;
+
+function updateCounter(){
+    document.getElementById("counter").textContent = count;
+}
+function increasebtn(){
+    if (count < 3 ){
+    count++;
+    updateCounter();
+}
+}
+
+function decreasebtn(){
+    if (count > 1){
+        count--;
+        updateCounter();
+    }
+}
+</script>
+    
 </html>
