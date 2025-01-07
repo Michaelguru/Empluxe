@@ -33,10 +33,31 @@
         </div>
         
         <div class="right-nav">
-            <a href="#" class="login"> LogIn</a>
-            <a href="" class="cart"> Cart</a>
+            <a href="#" class="login" onclick="cartView()"> Cart</a>
+            <!-- <a href="cart.html" class="cart"> Cart</a> -->
         </div>
     </header>
+
+    <div class="cart">
+        <h1>Your Cart</h1>
+        <img src="images/cancel-menu.png" alt="cancel" onclick="cartCancel()">
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="cart-items">
+            <!-- Items will be added here dynamically -->
+          </tbody>
+        </table>
+        <h3 id="total-price">Total: $0</h3>
+        <a href="#"> Proceed To Payment</a>
+      </div>
         
 
     <div class="top-section">
@@ -56,10 +77,12 @@
                 <a href="lanternTee.html" class="shop-link">
                 <img src="images/image1.jpeg">
                 <div class="shop-text">
-                    
+                    <div class="product" data-name="Empluxe Lantern Tee" data-price="59">
                     <h3> Empluxe Lantern Tee</h3>
                     <p> $59.00 </p>
                     </a>
+                <button class="add-to-cart">Add to Cart</button>
+                </div>
                 </div>
             </div>
         </div>
@@ -69,10 +92,12 @@
                 <a href="empluxe-bold-joggers.html" class="shop-link">
                 <img src="images/image2.jpeg">
                 <div class="shop-text">
-                    
+                    <div class="product" data-name="Empluxe Bold Joggers" data-price="69">
                     <h3> Empluxe Bold Juggers</h3>
                     <p> $69.00 </p>
                     </a>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
                 </div>
             </div>
         </div>
@@ -82,10 +107,12 @@
                 <a href="empluxe-urban-crop-jacket.html" class="shop-link">
                 <img src="images/image3.jpeg">
                 <div class="shop-text">
-                    
+                    <div class="product" data-name="Empluxe urban Crop Jacket" data-price="72">
                     <h3> Empluxe urban Crop Jacket</h3>
                     <p> $72.00 </p>
                     </a>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
                 </div>
             </div>
         </div>
@@ -95,10 +122,12 @@
                 <a href="empluxe-classic-hoodie.html" class="shop-link">
                 <img src="images/image4.jpeg">
                 <div class="shop-text">
-                    
+                    <div class="product" data-name="Empluxe Classic Hoodie" data-price="74">
                     <h3> Empluxe Classic Hoodie</h3>
                     <p> $74.00 </p>
                     </a>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
                 </div>
             </div>
         </div>
@@ -108,10 +137,12 @@
                 <a href="empluxe-distress-demin-shorts.html" class="shop-link">
                 <img src="images/image5.jpeg">
                 <div class="shop-text">
-                    
+                    <div class="product" data-name="Empluxe Distressed Denim Shorts" data-price="75">
                     <h3> Empluxe Distressed Denim Shorts</h3>
                     <p> $75.00 </p>
                     </a>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
                 </div>
             </div>
         </div>
@@ -121,10 +152,12 @@
                 <a href="empluxe-cropped-jacket.html" class="shop-link">
                 <img src="images/image6.jpeg">
                 <div class="shop-text">
-                    
+                    <div class="product" data-name="Empluxe Cropped Jacket" data-price="74">
                     <h3> Empluxe Cropped Jacket</h3>
                     <p> $74.00 </p>
                     </a>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
                 </div>
             </div>
         </div>
@@ -134,10 +167,12 @@
                 <a href="empluxe-flex-muscle-tank.html" class="shop-link">
                 <img src="images/image11.JPG">
                 <div class="shop-text">
-                    
+                    <div class="product" data-name="Empluxe Flex Muscle Tank" data-price="44">
                     <h3> Empluxe Flex Muscle Tank</h3>
                     <p> $44.00 </p>
                     </a>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
                 </div>
             </div>
         </div>
@@ -147,10 +182,12 @@
                 <a href="empluxe-classic-tee.html" class="shop-link">
                 <img src="images/image12b.JPG">
                 <div class="shop-text">
-                    
+                    <div class="product" data-name="Empluxe Classic Tee" data-price="64">
                     <h3> Empluxe Classic Tee</h3>
                     <p> $64.00 </p>
                     </a>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
                 </div>
             </div>
         </div>
@@ -303,5 +340,6 @@
 
 
     <script src="empluxe.js"></script>
+    <script src="cartCheckout.js"></script>
 </body>
 </html>

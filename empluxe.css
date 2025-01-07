@@ -66,7 +66,7 @@
 }
 .top-section{
     
-    position: relative;
+    /* position: relative; */
     z-index: 1;
     height: 80vh;
     background-image: linear-gradient(rgba(27, 27, 27, 0.295), rgba(82, 82, 82, 0.322)), url("images/Fashion\ Editorial.jpg") ;
@@ -140,6 +140,9 @@
 .shop-image img{
     height: 100%;
     width: 100%;
+}
+.shop-container{
+    margin-bottom: 40px;
 }
 .shop-link{
     color: black;
@@ -442,7 +445,99 @@ footer a{
 
 
 
-@media screen and (max-width: 770px) {
+.cart {
+    
+    font-family: Arial, sans-serif;
+     margin: 20px;
+    gap: 50px;
+    position: absolute;
+    width: 45%;
+    top: 50px;
+    right: 20px;
+    background-color: white;
+    padding-bottom: 50px;
+    border: 1px solid #000;
+    box-shadow: 2px 5px 10px 2px;
+    display: none;
+              
+}
+.cart img{
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+.cart h1{
+    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+  }
+  .cart h3{
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+  }
+  .cart a{
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    margin-left: 20%;
+    border-radius: 10px;
+    transition: .3s;
+  }
+  .cart a:hover{
+    color: rgb(98, 129, 98);
+  }
+  .add-to-cart {
+    background-color: rgb(98, 129, 98);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #218838;
+  }
+  
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+table th {
+    background-color: #f8f9fa;
+  }
+  
+  button.remove {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button.remove:hover {
+    background-color: #c82333;
+  }
+
+
+
+
+@media screen and (max-width: 855px) {
     *{
         margin: 0;
         padding: 0;
@@ -511,7 +606,7 @@ footer a{
         margin-left: 10%;
     }
     .top-section{
-        position: relative;
+        /* position: relative; */
         z-index: 1;
         height: 80vh;
         background-image: linear-gradient(rgba(27, 27, 27, 0.295), rgba(82, 82, 82, 0.322)), url("images/Fashion\ Editorial.jpg") ;
@@ -759,6 +854,74 @@ footer a{
         border-left: none ;
         color: black;
     }
+
+
+
+
+    .cart {
+    
+        font-family: Arial, sans-serif;
+         margin: 10px;
+        gap: 50px;
+        position: absolute;
+        width: 80%;
+        top: 70px;
+        right: 10px;
+        background-color: white;
+        padding-bottom: 50px;
+                  
+    }
+    .cart h1{
+        font-size: 25px;
+        margin-bottom: 20px;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 10px;
+      }
+      .cart h3{
+        font-size: 18px;
+        margin-top: 50px;
+        margin-left: 10px;
+        margin-bottom: 30px;
+      }
+      .cart a{
+        text-align: center;
+        text-decoration: none;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        margin-left: 20%;
+        border-radius: 10px;
+        transition: .3s;
+      }
+      .cart a:hover{
+        color: rgb(98, 129, 98);
+      }
+      
+    table th, table td {
+        border: 1px solid #adadad;
+        padding: 10px;
+        text-align: center;
+      }
+      
+    table th {
+        background-color: #f8f9fa;
+      }
+      
+      button.remove {
+        background-color: #dc3545;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
     
 
 
@@ -894,4 +1057,73 @@ footer a{
         text-align: right;
         margin-right: 10%;
     }
+
+    .cart {
+    
+        font-family: Arial, sans-serif;
+         margin: 0px;
+        gap: 50px;
+        position: absolute;
+        width: 90%;
+        top: 60px;
+        right: 0px;
+        padding-left: 0;
+        margin-left: 0;
+        background-color: white;
+        padding-bottom: 50px;
+                  
+    }
+    .cart h1{
+        font-size: 23px;
+        margin-bottom: 20px;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 10px;
+      }
+      .cart h3{
+        font-size: 16px;
+        margin-top: 50px;
+        margin-left: 10px;
+        margin-bottom: 30px;
+      }
+      .cart a{
+        text-align: center;
+        text-decoration: none;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        margin-left: 20%;
+        border-radius: 10px;
+        transition: .3s;
+        font-size: 14px;
+      }
+      .cart a:hover{
+        color: rgb(98, 129, 98);
+      }
+      
+    table th, table td {
+        font-size: 12px;
+        border: 1px solid #adadad;
+        padding: 10px 5px;
+        text-align: center;
+      }
+      
+    table th {
+        background-color: #f8f9fa;
+      }
+      
+      button.remove {
+        background-color: #dc3545;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
 }
