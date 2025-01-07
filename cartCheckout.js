@@ -80,8 +80,9 @@ document.querySelectorAll(".add-to-cart").forEach((button) => {
         updateCart();
         alert("Are you sure?")
       });
-      alert("Added to Cart")
+      
     });
+    alert("Added to Cart")
 
   }
 
