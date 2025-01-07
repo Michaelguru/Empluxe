@@ -39,6 +39,8 @@ document.querySelectorAll(".add-to-cart").forEach((button) => {
     }
   
     updateCart();
+    alert("Added to Cart")
+
     
   }
   
@@ -82,8 +84,7 @@ document.querySelectorAll(".add-to-cart").forEach((button) => {
       });
       
     });
-    alert("Added to Cart")
-
+    
   }
 
 
