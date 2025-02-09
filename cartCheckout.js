@@ -37,10 +37,8 @@ document.querySelectorAll(".add-to-cart").forEach((button) => {
         total: price,
       });
     }
-  
-    updateCart();
     alert("Added to Cart")
-
+    updateCart();
     
   }
   
@@ -80,11 +78,10 @@ document.querySelectorAll(".add-to-cart").forEach((button) => {
         const index = button.getAttribute("data-index");
         cart.splice(index, 1);
         updateCart();
-        alert("Are you sure?")
       });
       
     });
-    
+
   }
 
 
